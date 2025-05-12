@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resumo HTML</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body class="degrade">
+
+    <div class="fundo">
+        <H1>Resumo HTML</H1>
+
+        <h2><span class="numberhtml">1</span> Parte geral da estrutura HTMl</h2>
+
+
+
+        <ul>
+            <li>h1,h2,h3,h4,h5,h6 = São usados nos níveis de títulos do texto</li>
+            <li>p = Ultilizado para criar paragrafos</li>
+            <li>hr = Usado para criar uma linha horizontal</li>
+            <li>br = Usado para quebrar linhas</li>
+            <li>lorem = Gerador de conversa fiada</li>
+            <li>&#x = Tag para emotes</li>
+            <li>&reg = exemplo de tag para símbolos, esse é o da marca registrada</li>
+            <li>img = carregar imagens</li>
+            <li>link favicon = favicon do site</li>
+            <li>address = destacar endereços, se eu abrir o site pelo celular ele redireciona pro maps</li>
+            <li>pre = faz o texto ser lido da forma que foi escrito no código</li>
+        </ul>
+    </div>
+
+    <div class="divisao"></div>
+
+    <div class="fundo">
+        <h2><span class="numberhtml">2</span> Formatação de textos</h2>
+        <ul>
+            <li><strong>Negrito/destaque:</strong> strong</li>
+            <li><em>Itálico/ênfase:</em> em</li>
+            <li><mark>mark:</mark> marcar texto</li>
+            <li>style=background color: mudar a cor da marcação</li>
+            <li>big: texto grande</li>
+            <li><small>small:</small> texto pequeno</li>
+            <li><del>del:</del> texto excluído</li>
+            <li><ins>ins:</ins> texto inserido</li>
+            <li><sup>sup:</sup> sobrescrito (acima)</li>
+            <li><sub>sub:</sub> subscrito (abaixo)</li>
+            <li><code>code:</code> fonte mono expaçada (ótima para ler códigos)</li>
+            <li>pre = faz o texto ser lido da forma que foi escrito no código</li>
+            <li>shift + tab = retira os espaços antes do código</li>
+            <li><q>q:</q> entre aspas (citação)</li>
+            <li>blockquote: citações completas e longas</li>
+            <li>blockquote cite: = coloco o endereço da citação</li>
+            <li>abbr: para abreviações</li>
+        </ul>
+    </div>
+
+    <div class="divisao"></div>
+
+    <div class="fundo">
+        <h2><span class="numberhtml">3</span> Listas</h2>
+        <h3>O HTML possui três tipos principais de listas para estruturar informações:</h3>
+        <h4>1. Listas Ordenadas (ol):</h4>
+        <p>A tag ol cria uma lista ordenada, onde os itens seguem uma sequência numérica ou alfabética.</p>
+        <p>Tag li → Define cada item dentro da lista.</p>
+
+        <h4>Atributos:</h4>
+
+        <p class="marcatexto2">
+            type → Define o estilo da numeração (1, A, a, I, i).
+            start → Define o número inicial da contagem.
+        </p>
+        <h4>✅Exemplo:</h4>
+
+        <ol type="A" start="3"> <!-- Começa no item 'C' -->
+            <li>Primeiro item</li>
+            <li>Segundo item</li>
+            <li>Terceiro item</li>
+        </ol>
+        <h4>📌Código usado:</h4>
+
+        <pre>
+                    &lt;ol type="A" start="3"&gt; &lt;!-- Começa no item 'C' --&gt;
+                    &lt;li&gt;Primeiro item&lt;/li&gt;
+                    &lt;li&gt;Segundo item&lt;/li&gt;
+                    &lt;li&gt;Terceiro item&lt;/li&gt;
+                    &lt;/ol&gt;
+                    </pre>
+        <h4>✅ Tabela dos tipos de numeração:</h4>
+        <img src="imagens/78F5EDA9-7EB6-4FB3-B5F0-3351C387C71B.png" alt="Tabela de tipos de numeracao">
+        <h3>2. Listas não ordenadas (ul)</h3>
+        <p>A tag ul cria uma lista sem ordem específica, ideal para agrupar itens sem hierarquia.</p>
+        <p>Tag li → Define cada item dentro da lista.</p>
+        <h4>Atributos:</h4>
+        <p class="marcatexto2">list-style-type → Define o estilo dos marcadores (disc, circle, square).</p>
+        <h4>✅ Exemplo:</h4>
+        <ul style="list-style-type: square;">
+            <li>Item A</li>
+            <li>Item B</li>
+            <li>Item C</li>
+        </ul>
+        <h4>📌Código usado:</h4>
+        <pre>
+                        &lt;ul style="list-style-type: square;"&gt;
+                            &lt;li&gt;Item A&lt;/li&gt;
+                            &lt;li&gt;Item B&lt;/li&gt;
+                            &lt;li&gt;Item C&lt;/li&gt;
+                        &lt;/ul&gt;
+                        </pre>
+        <h4>✅ Tipos de marcadores disponíveis:</h4>
+        <img src="imagens/9350DE6C-446D-4911-877D-52F07B429E27.png" alt="Tipos de marcadores">
+        <h3>3. Listas de Definição (dl) </h3>
+        <p>A tag dl é usada para criar uma lista de definições, ideal para apresentar termos e suas descrições.</p>
+        <p>Tag dt → Define o termo a ser descrito.</p>
+        <p>Tag dd → Define a descrição do termo.</p>
+        <h4>✅ Exemplo:</h4>
+
+        <dl>
+            <dt>HTML</dt>
+            <dd>Linguagem de marcação usada para estruturar páginas web.</dd>
+
+            <dt>CSS</dt>
+            <dd>Usado para estilizar elementos HTML.</dd>
+        </dl>
+        <h4>📌Código usado:</h4>
+        <pre>
+                            &lt;dl&gt;
+                                &lt;dt&gt;HTML&lt;/dt&gt;
+                                &lt;dd&gt;Linguagem de marcação usada para estruturar páginas web.&lt;/dd&gt;
+                    
+                                &lt;dt&gt;CSS&lt;/dt&gt;
+                                &lt;dd&gt;Usado para estilizar elementos HTML.&lt;/dd&gt;
+                            &lt;/dl&gt;
+                            </pre>
+    </div>
+
+    <div class="divisao"></div>
+
+    <div class="fundo">
+        <h2><span class="numberhtml">4</span> Links externos e internos</h2>
+
+        <h3>1. Definição de Links em HTML</h3>
+        <p>Os links em HTML são elementos que permitem que você navegue de uma página para outra ou para um recurso na
+            web, como uma imagem, um vídeo ou um arquivo de download. Em HTML, usamos a tag a (de "anchor", que
+            significa âncora) para criar links.</p>
+        <h3>2. Estrutura Básica de um Link</h3>
+        <p>A estrutura básica de um link em HTML é a seguinte:</p>
+        <pre>
+                                <p>&lt;a href=&quot;URL_do_destino&quot;&gt;Texto do link&lt;/a&gt;</p> </pre>
+
+        <ul style="list-style-type: disc;">
+            <li>a: A tag de abertura do link.</li>
+            <li>href: Atributo que especifica o endereço do destino do link.</li>
+            <li>Texto do link: O texto visível que será clicado pelo usuário para navegar para o destino.</li>
+        </ul>
+        <h3>4. Atributos Comuns de Links</h3>
+        <p>href: O destino do link. Pode ser um URL externo, um caminho relativo para outra página no site, ou até um
+            endereço de e-mail.</p>
+        <pre>
+                                   <p>&lt;a href=&quot;https://www.google.com&quot;&gt;Ir para o Google&lt;/a&gt; (link para um site externo) </p>
+                                    <p>&lt;a href=&quot;pagina2.html&quot;>Página 2&lt;/a>  (link para uma página dentro do site)</p>
+                                    <p>&lt;a href=&quot;mailto:contato@exemplo.com&quot;>Enviar e-mail&lt;/a&gt;  (link para enviar um email)</p>
+                               </pre>
+        <p class="marcatexto2">target: Especifica onde o destino será aberto. Os valores mais comuns são:</p>
+        <ul style="list-style-type: disc;">
+            <li>_self (padrão): Abre o link na mesma janela ou aba</li>
+            <li>_blank: Abre o link em uma nova janela ou aba.</li>
+            <li>_parent: Abre o link no quadro pai (caso esteja em um iframe).</li>
+            <li>_top: Abre o link na janela inteira, cancelando qualquer estrutura de quadro.</li>
+        </ul>
+        <h3>✅Exemplo:</h3>
+        <pre>&lt;a href=&quot;https://www.exemplo.com&quot;target="_blank">Abrir em uma nova aba&lt;/a&gt;</pre>
+        <p>title: Adiciona uma dica que aparece quando o usuário passa o mouse sobre o link.</p>
+
+        <pre>&lt;a href=&quot;https://www.exemplo.com&quot;title="Clique para visitar o site">Exemplo&lt;/a&gt;</pre>
+
+        <p>rel: Usado para definir o relacionamento entre o documento atual e o link. Por exemplo.</p>
+        <p>rel="noopener noreferrer" é recomendado para links que abrem em uma nova aba</p>
+        <p>(target="_blank") para melhorar a segurança.</p>
+        <pre>&lt;a href=&quot;https://www.exemplo.com&quot; target="_blank" rel="noopener noreferrer">Exemplo Seguro&lt;/a></pre>
+        <h3>5. Links para Diferentes Tipos de Destinos</h3>
+        <h4>Link para uma página interna:</h4>
+        <pre>&lt;a href="sobre.html">Sobre nós&lt;/a&gt;</pre>
+        <p>
+        <h4>Link para uma âncora na mesma página (ou um ponto específico de uma página):</h4>
+        </p>
+        <p>Primeiro, defina a âncora com o atributo id em algum elemento da página:</p>
+        <pre>&lt;h2 id="sobre">Sobre nós&lt;/h2&gt;</pre>
+        <p>E depois crie o link para esse ponto específico:</p>
+        <pre>&lt;a href="#sobre">Ir para a seção Sobre&lt;/a&gt;</pre>
+        <h4>Link para um arquivo para download:</h4>
+        <p>Se você quiser permitir que o usuário baixe um arquivo ao clicar no link, use o atributo download.</p>
+        <pre>&lt;a href="documento.pdf" download>Baixar o documento&lt;/a&gt;</pre>
+        <h3>6. Links com Imagens</h3>
+        <p>Você também pode usar uma imagem como link, colocando a tag &lt;img&gt; dentro da tag &lt;a&gt;.</p>
+        <pre>
+                                   &lt;a href="https://www.exemplo.com">
+                                   &lt;img src="imagem.jpg" alt="Imagem representando exemplo" />
+                                   &lt;/a&gt;</pre>
+        <p div class="marcatexto2">Neste caso, a imagem será o "texto" clicável que leva ao destino do link.</p>
+        <h3>7. Links em Listas e Navegação</h3>
+        <p>Links são frequentemente usados em menus de navegação, que podem ser estruturados com listas não ordenadas.
+        </p>
+        <pre>
+                                       &lt;ul&gt;
+                                       &lt;li&gt;&lt;a href="home.html&quot;>Home&lt;/a>&lt;/li&gt;
+                                       &lt;li&gt;&lt;a href="sobre.html">Sobre&lt;/a>&lt;/li&gt;
+                                       &lt;li&gt;&lt;a href="contato.html">Contato&lt;/a>&lt;/li&gt;
+                                       &lt;/ul&gt;
+                                   </pre>
+
+        <h3>8. Considerações sobre Acessibilidade</h3>
+        <p>-Sempre forneça um texto claro e descritivo no link para melhorar a acessibilidade.</p>
+        <p>-O uso de atributos como title pode ajudar, mas não deve ser usado como única descrição</p>
+        <p>-Links de navegação importantes, como "Voltar" ou "Próximo", devem ser suficientemente informativos.</p>
+        <h3>Conclusão</h3>
+        <p>Links em HTML são fundamentais para a navegação na web, permitindo que você conecte diferentes páginas,
+            arquivos e recursos. Através de atributos como href, target, rel e outros, você pode controlar o
+            comportamento e a funcionalidade dos links, além de garantir uma boa experiência de usuário e
+            acessibilidade.</p>
+    </div>
+
+    <div class="divisao"></div>
+
+    <!--CLEAN-->
+
+    <div class="fundo">
+        <h2><span class="numberhtml">5</span> imagens dinâmicas e Videos</h2>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+</body>
+
+</html>

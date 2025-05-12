@@ -1,0 +1,85 @@
+HTML
+------------------
+index.html = primeiro código do arquivo
+! = código para aparecer a base do HTML
+lang="pt-br" = mudar a linguagem 
+------------------
+Forma = CSS
+Sentido = HTML5
+------------------
+h1 = Titulo
+hr = Linha horizontal
+p = parágrafo 
+br = quebrar linhas
+<!-- = comentários para organizar os códigos
+&#x = Tag para emotes
+&reg = exemplo de tag para símbolos, esse é o da marca registrada
+img = carregar imagens
+link favicon = favicon do site
+lorem = gerador de conversas fiada
+address = destacar endereços, se eu abrir o site pelo celular ele redireciona pro maps
+------------------
+Sobre títulos:
+
+h1,h2,h3,h4,h5,h6 = usar nos níveis do texto
+------------------
+Formatação de textos:
+
+Negrito/destaque : strong
+Itálico/ênfase: em
+mark = marcar texto
+style=background color = mudar a cor da marcação
+big = texto grande
+small = texto pequeno
+del = texto excluído
+ins = texto inserido 
+sup = sobrescrito (acima)
+sub = subscrito (abaixo)
+code = fonte mono expaçada (ótima para ler códigos)
+pre = organiza as linhas do código destacados com a tag code / se guia pelos espaços e quebras de linhas
+shift + tab = retiro os espaços antes do código
+q = entre aspas (citação)
+blockquote = citações completas e longas
+blockquote cite= = coloco o endereço da citação 
+abbr: para abreviações, exemplo cs com a tag abbr quando passar o mouse encima aparece oque significa
+------------------
+
+Listas:
+listas ordenadas:
+ol = lista ordenada
+li = cada numero de itens na lista
+type = tipo de lista (tag colocado na frente de ol)
+start = em qual numero a lista vai começar
+ul = lista não ordenada
+dl = lista de definição
+dt = Termo
+dd = Descrição
+------------------
+
+Links externos e internos:
+a = link clikavel (abre em uma janela sobrepondo meu site)
+target= _blank rel= external = (abre em uma nova janela)
+a = também usado para ir e voltar para paginas no meu site (rel = back e prev)
+target= _blank rel= nofollow 
+../ = voltar pagina que esta em pasta
+
+Links de dowloads:
+
+media types: https://www.iana.org/assignments/media-types/media-types.xhtml
+
+------------------
+Imagens dinamicas:
+
+picture
+img
+source media (max)
+------------------
+Videos:
+
+video
+controls = controles do video no site
+poster= "tumb" do video
+source src   webm/mp4/mkv/ogg sempre na ordem
+------------------
+
+

@@ -1,0 +1,119 @@
+@charset "UTF-8";
+
+
+body{
+    background-image: linear-gradient(to top,#262626, #404040,#8C8C8C, #BFBFBF,#545c9eb7 );
+    background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+pre{
+    background: #181818ea;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto;
+}
+
+h1, h2{
+    color: #333;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+}
+
+ul{
+    padding-left: 20px;
+}
+
+.corpo{
+    
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 3px 0px 10px rgba(0, 0, 0, 0.507);
+    font-family: Arial, Helvetica, sans-serif;  
+    margin: auto;
+    width: 800px;
+    line-height: 1.6;
+        
+    
+}
+
+.marcatexto{
+    background: #545c9e56;
+    padding: 5px;
+    border-radius: 3px;
+    
+
+}
+
+h1{
+    text-align: center;
+    text-shadow: 1px 1px 2px #84A9BF ; 
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.number{
+    background-color: #545c9eb7;
+    color: rgb(255, 255, 255);
+    padding: 5px 10px;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.codigos{
+    margin: 1em;
+    text-align: justify;   
+}
+
+
+/* CSS do resumo de HTML começa aqui */
+
+.degrade{  /* Degrade do fundo da página */
+    background-image: linear-gradient(to top,#F2360C, #F25E3D, #F29580);
+    background-attachment: fixed;
+}
+
+.fundo{ 
+    background-color: #ffffff;
+    padding: 10px;  
+    border-radius: 10px;
+    box-shadow: 3px 0px 10px rgba(0, 0, 0, 0.507);
+    margin: auto;
+    width: 1000px;
+    line-height: 1.6;
+    font-family: Arial, Helvetica, sans-serif; 
+}
+
+.numberhtml{ /* Estética dos números dos capítulos */
+    background-color: #F2360C;
+    color: rgb(255, 255, 255);
+    padding: 5px 10px;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 16px;
+}
+  
+.marcatexto2{
+    background: #F29580;
+    padding: 5px;
+    border-radius: 3px;
+
+}
+
+.divisao{
+    height: 50px;
+    background-image: linear-gradient(to top,#F2360C, #F25E3D, #F29580);
+    background-attachment: fixed;
+    margin: 0;
+    left: -20px;
+    position: relative;
+    width: 100em;
+    
+
+}
+
+
+

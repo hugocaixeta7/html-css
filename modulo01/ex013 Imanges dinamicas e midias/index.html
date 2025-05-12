@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <H1>Imagens dinamicas</H1>
+    <p>Tente abrir esse site em varios dispositivos diferentes ou aumente e diminua o tamanho do seu navegador</p>
+    
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-pequena.png" type="image/png"> <!--Nunca inverter a ordem dos sources. Sempre Pequena/Média/Grande-->
+        <source media="(max-width: 1050px )" srcset="imagens/foto-media.png" type="image/png">
+        <img src="imagens/foto-grande.png" alt="Imangen flexivel">
+    </picture>
+
+    <h1>Reproduzindo audios </h1>
+    <p>vamos aprender a reproduzir audios em html5</p>
+    <audio src="midia/seloco-nao-compensa.mp3" controls autoplay></audio> <!-- FORMA UM POUCO LIMITADA-->
+    <!--MP3 WAV OGG-->
+
+    <audio preload="metadata" autoplay>
+        <source src="midia/seloco-nao-compensa.mp3" type="audio/mpeg">
+        <source src="midia/seloco-nao-compensa.ogg" type="audio/ogg">
+        <source src="midia/seloco-nao-compensa.wav" type="audio/wav">
+        <p>infelismente seu navegador não consegue reproduzir áudio</p>
+        <a href="midia/seloco-nao-compensa.mp3">Clique aqui para baixar o arquivo MP3</a>
+
+    </audio>
+</body>
+</html>
