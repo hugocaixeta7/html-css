@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,81 +8,106 @@
     <link rel="shortcut icon" href="imagens/5968242.png" type="image/x-icon">
     <title>Resumo em CSS</title>
     <link rel="stylesheet" href="estilo.css">
-    
-</head>
-<body>
-        <div class="corpo">
-            <h1>Resumo de CSS</h1>
-            <h2><span class="number">1</span> Fonte padrão no body</h2>
-            <pre>
-                body {
-                    font-family: Arial, Helvetica, sans-serif;
-                    font-size: 16px;
-                    font-weight: normal;
-                    font-style: italic;
-                }
-            </pre>
-            <h2><span class="number">2</span> Medidas de Fonte</h2>
-            <ul>
-                <li><strong>Absolutas:</strong> cm, mm, in, px, pt, pc</li>
-                <li><strong>Relativas:</strong> em, rem, %, vw, vh, ex</li>
-            </ul>
-            <p class="marcatexto">16px geralmente = 1em</p>
-            <h2><span class="number">3</span> Estilos de Texto</h2>
-            <pre>
-                p {
-                    font-style: italic; /* normal | italic | oblique */
-                    font-weight: bold;  /* lighter | normal | bold | bolder | 100-900 */
-                }
-            </pre>
-            <h2><span class="number">4</span>Shorthand (atalho)</h2>
-            <pre>
-                h1 {
-                    font: italic bold 2em 'Times New Roman', Times, serif;
-                }
-            </pre>
-            <p class="marcatexto">Ordem: font-style → font-weight → font-size → font-family</p>
-            <h2><span class="number">5</span> Decoração de Texto</h2>
-            <pre>h2 {
-                text-decoration: underline; /* underline | overline | line-through | none */
-            }</pre>
-        
-            <h2>✨ Resumo Visual</h2>
-            
 
-            <div class="codigos">
-                <ul>
-                    <li><strong>@charset "UTF-8";</strong> Define a codificação de caracteres para o arquivo CSS.</li>
-                    <li><strong>font-family:</strong> Define a fonte principal.</li>
-                    <li><strong>font-size:</strong> Controla o tamanho do texto.</li>
-                    <li><strong>font-weight:</strong> Define o peso do texto.</li>
-                    <li><strong>font-style:</strong> Define se é itálico onormal.</li>
-                    <li><strong>text-decoration:</strong> Adiciona efeitovisuais ao texto.</li>
-                    <li><strong>background-image:</strong> Define uma imagem de fundo para um elemento.</li>
-                    <li><strong>background-attachment:</strong> Determina se a imagem de fundo será fixa ou rolará junto com a página.</li>
-                    <li><strong>background:</strong> Propriedade abreviada para definir cor de fundo, imagem, posição etc.</li>
-                    <li><strong>background-color:</strong> Define a cor de fundo do elemento.</li>
-                    <li><strong>color:</strong> Define a cor do texto dentro de um elemento.</li>
-                    <li><strong>border-radius:</strong> Define o raio das bordas do elemento, permitindo cantos arredondados.</li>
-                    <li><strong>border-bottom:</strong> Define propriedades da borda inferior do elemento.</li>
-                    <li><strong>padding-bottom:</strong> Define o espaço interno (preenchimento) na parte inferior do elemento.</li>
-                    <li><strong>padding-left:</strong> Define o preenchimento do lado esquerdo do elemento.</li>
-                    <li><strong>overflow-x:</strong> Especifica se o conteúdo deve ser cortado.</li>
-                    <li><strong>margin:</strong> Define o espaço externo ao redor do elemento.</li>
-                    <li><strong>width:</strong> Define a largura do elemento.</li>
-                    <li><strong>padding:</strong> Define o preenchimento interno do elemento.</li>
-                    <li><strong>box-shadow:</strong> Aplica sombras ao redor do contorno do elemento.</li>
-                    <li><strong>line-height:</strong> Define a altura das linhas de texto.</li>
-                    <li><strong>text-align:</strong> Especifica o alinhamento horizontal do texto dentro do elemento.</li>
-                    <li><strong>text-shadow:</strong> Adiciona sombra ao texto.</li>
-                    <li><strong>text-indent:</strong> Especifica o recuo da primeira linha de texto dentro do elemento.</li>
-                    <li><strong>font:</strong> Propriedade abreviada para definir estilo, variante, peso, tamanho da fonte, altura dalinha e família da fonte.</li>
-                    <li><strong>id:</strong> Define um identificador único para um elemento.</li>
-                    <li><strong>class:</strong> Define uma classe para um elemento, permitindo a aplicação de estilos a vários elementoscom a mesma classe.</li>
-                    </ul>
-            </div>
-                
-            
-        </div>
+</head>
+
+<body>
+
+    <header>
+        <h1>Resumo de CSS</h1>
+    </header>
+    <main>
+        <h2><span class="number">1</span> Tipografia & Texto</h2>
+        <pre>
+                    body {
+                        font-family: Arial, Helvetica, sans-serif;
+                        font-size: 16px;
+                        font-weight: normal;
+                        font-style: italic;
+                    }</pre>
+        <h2><span class="number">2</span> Unidades de Medida no CSS</h2>
+        <ul>
+            <li><strong>Absolutas:</strong> cm, mm, in, px, pt, pc</li>
+            <li><strong>Relativas:</strong> em, rem, %, vw, vh, ex</li>
+        </ul>
+        <p class="marcatexto">16px geralmente = 1em</p>
+        <h2><span class="number">3</span> Estilos de Texto</h2>
+        <pre>
+                    p {
+                        font-style: italic; /* normal | italic | oblique */
+                        font-weight: bold;  /* lighter | normal | bold | bolder | 100-900 */
+                    }</pre>
+        <h2><span class="number">4</span> Shorthand (atalho)</h2>
+        <pre>
+                    h1 {
+                        font: italic bold 2em 'Times New Roman', Times, serif;
+                    }
+                </pre>
+        <p class="marcatexto">Ordem: font-style → font-weight → font-size → font-family</p>
+        <h2><span class="number">5</span> Decoração de Texto</h2>
+        <pre>
+            h2 {
+                    text-decoration: underline; /* underline | overline | line-through | none */
+                }</pre>
+        <h2><span class="number">6</span> Fundamentos</h2>
+        <ul>
+            <li><strong>color:</strong> Define a cor do texto.</li>
+            <li><strong>text-shadow:</strong> Adiciona sombra ao texto.</li>
+            <li><strong>text-align:</strong> Especifica o alinhamento horizontal do texto dentro do elemento.</li>
+            <li><strong>text-indent:</strong> Especifica o recuo da primeira linha de texto dentro do elemento.</li>
+            <li><strong>line-height:</strong> Define a altura das linhas de texto.</li>
+            <li><strong>background:</strong> Define cor ou imagem de fundo.</li>
+            <li><strong>font-family:</strong> Escolhe a fonte do texto.</li>
+            <li><strong>font-size:</strong> Controla o tamanho da fonte.</li>
+            <li><strong>margin & padding:</strong> Espaçamentos externos e internos.</li>
+            <li><strong>text-decoration:</strong> Adiciona efeitovisuais ao texto.</li>
+            <li><strong>width:</strong> Define a largura do elemento.</li>
+            <li><strong>height:</strong> Define a Altura do elemento.</li>
+        </ul>
+        <h2>Layout & Posicionamento</h2>
+        <ul>
+            <li><strong>display:</strong> block, inline, flex, grid, etc.</li>
+            <li><strong>position:</strong> static, relative, absolute, fixed, sticky.</li>
+            <li><strong>z-index:</strong> Controla a ordem de sobreposição dos elementos.</li>
+        </ul>
+        <h2>Flexbox & Grid (Responsividade)</h2>
+        <ul>
+            <li><strong>display:</strong> flex; → Layout flexível.</li>
+            <li><strong>display:</strong> grid; → Sistema de grid avançado.</li>
+            <li><strong>justify-content & align-items</strong> → Controle de alinhamento.</li>
+        </ul>
+        <h2>Estilização Avançada</h2>
+        <ul>
+            <li><strong>box-shadow:</strong> Adiciona sombra ao elemento.</li>
+            <li><strong>border-radius:</strong> Arredonda cantos.</li>
+            <li><strong>opacity:</strong> Define a transparência do elemento.</li>
+        </ul>
+        <h2>Pseudo-elementos e Pseudo-classes</h2>
+        <ul>
+            <li><strong>:hover</strong> → Estilo ao passar o mouse.</li>
+            <li><strong>:nth-child(n)</strong> → Seleciona filhos específicos.</li>
+            <li><strong>::before & ::after</strong> → Adiciona conteúdo antes/depois do elemento.</li>
+        </ul>
+        <h2>Animações & Transições</h2>
+        <ul>
+            <li><strong>transition</strong> → Anima mudanças suaves entre estados.</li>
+            <li><strong>@keyframes</strong> → Cria animações personalizadas.</li>
+        </ul>
+        <h2>Media Queries (Responsividade)</h2>
+        <ul>
+            <li><strong>@media</strong> (max-width: 768px) {...} → Adaptação para telas menores.</li>
+        </ul>
+        <h2>Variáveis CSS (Facilitando a manutenção)</h2>
+        <pre>
+                :root {
+                        --main-color: #3498db;
+                }
+                body {
+                  background-color: var(--main-color);
+                }
+            </pre>
+        <p>👉 Benefícios: Padroniza estilos e facilita mudanças globais!</p>
+    </main>
 </body>
+
 </html>
