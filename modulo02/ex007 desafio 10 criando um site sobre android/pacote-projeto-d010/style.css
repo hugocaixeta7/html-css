@@ -173,6 +173,8 @@ aside div.pai ul{
 aside div.pai{
     display: flex;
     gap: 30px;
+    justify-content: space-between;
+    padding-right: 25em;
 }
 
 aside abbr {
