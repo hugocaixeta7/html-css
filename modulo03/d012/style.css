@@ -36,6 +36,7 @@ header > h1 {
 header > p {
   padding-bottom: 50px;
   font-family: var(--fonte1);
+  font-size: 14px;
 }
 
 p {
@@ -61,6 +62,10 @@ section {
   padding-left: 30px;
   line-height: 2em;
   display: block;
+}
+
+section > p {
+  padding-bottom: 168px;
 }
 
 section#img01 {
@@ -93,14 +98,17 @@ footer {
   background-color: black;
   color: white;
   font-family: var(--fonte1);
-  padding: 10px;
+  padding: 6px;
+  font-size: 14px;
 }
 
 footer > p > a {
   text-decoration: none;
   color: white;
+  font-weight: bolder;
 }
 
 footer > p > a:hover {
   text-decoration: underline;
+  color: grey;
 }
