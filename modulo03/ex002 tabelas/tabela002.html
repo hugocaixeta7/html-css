@@ -17,6 +17,7 @@
             width: 500px;
             border-collapse: collapse;
             margin: auto;
+            position: relative;
         }
 
         td, th{
@@ -31,6 +32,12 @@
             background-color: lightgray;
             border: 1px solid black;
             border-bottom: 0px;
+        }
+
+        thead > tr > th{
+            position: sticky;
+            top: -1;
+            background-color: gray;
         }
 
         thead, tfoot{
