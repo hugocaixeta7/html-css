@@ -11,6 +11,7 @@
 
         table{
             width: 400px;
+            height: 400px;
             border-collapse: collapse;
         }
 
@@ -21,10 +22,16 @@
         td{
             border: 1px solid black;
             padding: 8px;
+            text-align: center; /* Alinhamento horizontal */
+            vertical-align: top; /* Alinhamento vertical */
         }
 
         td.dado{
             background-color: lightgoldenrodyellow;
+        }
+
+        .numero{
+            text-align: right;
         }
 
     </style>
@@ -36,7 +43,7 @@
         HIERARQUIA DE TABELAS (Simples)
         TABLE = Tabela
         TABLE ROW = Linha de tabela
-        TABLE HEADER = Cabeçalho de tabela
+        TABLE HEADER = Cabeçalho de tabela (Título)
         TABLE DATA = Dados de tabela
     -->
     <table>
@@ -48,12 +55,12 @@
         <tr class="linha">
             <td>A2</td> <!--dado-->
             <td>B2</td> <!--dado-->
-            <td>C2</td> <!--dado-->
+            <td class="numero">C2</td> <!--dado-->
         </tr>
         <tr> <!--Terceira linha-->
             <td>A3</td> <!--dado-->
             <td>B3</td> <!--dado-->
-            <td>C3</td> <!--dado-->
+            <td class="numero">C3</td> <!--dado-->
         </tr>
         <tr> <!--Quarta linha-->
             <td>A4</td>
