@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 Estilos inline: Tem limitações, preciso codar cada linha para que aplique o estilo, inline é feito na mesma linha do html, muito trabalhoso e pouco usavel para grandes projeitos.
 Estilos Locais / Internos: Muito pratico e mais estiloso no codigo mas, limitado a muitas páginas de trabalho
 Estilos Externos: melhor forma de usar estilos para muitas páginas, no qual é um arquivo unico para a css
