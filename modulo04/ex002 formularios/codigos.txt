@@ -1,3 +1,28 @@
 input text = cria uma caixa de texto
 input submit = cria a caixa de envio
 label = (etiqueta) por ex para dizer que nome é relacionado com a caixa nome (sempre colocar o id)
+
+
+
+Atributos:
+
+method (GETe POST) = GET = Para dados não sensiveis
+POST = Para dados sensiveis
+
+autocomplete (on e off) = on ele ira aparecer sugestão de nome no cadastro, no off não vai aparecer.
+
+required = campo obrigatorio
+
+minlength = minimo de letras no campo
+maxlength = maximo de letras no campo
+
+min = minimo de numeros em caixas numericas
+max = maximo de numeros em caixas numericas
+
+size = maximo de letras que ele vai mostrar
+
+placeholder = mostrar uma dica no campo exe: usuario: "Nome do usuario"
+
+step = ex de campo de numeros: de quanto em quanto a nota vai mudando, step de 0.5 
+
+value = sugerir que apareça alguma coisa preenchida no campo
