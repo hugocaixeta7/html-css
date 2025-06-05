@@ -1,7 +1,8 @@
 input text = cria uma caixa de texto
 input submit = cria a caixa de envio
 label = (etiqueta) por ex para dizer que nome é relacionado com a caixa nome (sempre colocar o id)
-
+fieldset = agrupamento de campos
+legend = nome ao agrupamento
 
 
 Atributos:
