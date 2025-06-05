@@ -1,0 +1,63 @@
+@charset "UTF-8";
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+body{
+    background-image: linear-gradient(to top, #F2360C, #F25E3D, #F29580);
+    background-attachment: fixed;
+}
+
+h1{
+    padding: 30px;
+    text-align: center;
+    margin: auto;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    width: 300px;
+    border-radius: 30px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+section > h2,h3{
+    
+    margin-top: 20px;
+}
+
+main > section {
+    background-color: white;
+    width: 1200px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 15px;
+    margin-bottom: 50px;
+    line-height: 2em;
+    text-align: justify;
+    font-size: 20px;
+}
+
+.marcatexto2 {
+    background: #F29580;
+    padding: 5px;
+    border-radius: 3px;
+    width: 750px;
+}
+
+section > div > pre {
+    background: #181818ea;
+    color: white;
+    background: #181818ea;
+    color: white;
+    border-radius: 5px;
+    width: 750px;
+    height: 200px;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    
+}
