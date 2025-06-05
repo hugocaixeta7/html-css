@@ -12,7 +12,7 @@ body{
     background-attachment: fixed;
 }
 
-h1{
+main > h1{
     padding: 30px;
     text-align: center;
     margin: auto;
@@ -25,8 +25,8 @@ h1{
 }
 
 section > h2,h3{
-    
     margin-top: 20px;
+    border-top: 2px solid #ddd;
 }
 
 main > section {
@@ -36,9 +36,10 @@ main > section {
     padding: 30px;
     border-radius: 15px;
     margin-bottom: 50px;
-    line-height: 2em;
+    line-height: 1.6;
     text-align: justify;
     font-size: 20px;
+    box-shadow: 3px 0px 10px rgba(0, 0, 0, 0.507);
 }
 
 .marcatexto2 {
@@ -46,6 +47,7 @@ main > section {
     padding: 5px;
     border-radius: 3px;
     width: 750px;
+    display: inline;
 }
 
 section > div > pre {
@@ -59,5 +61,4 @@ section > div > pre {
     padding: 10px;
     margin-bottom: 10px;
     margin-top: 10px;
-    
 }
