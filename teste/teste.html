@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Resumo HTML Interativo</title>
+    <link rel="stylesheet" href="style.css">
+
+  <style>
+    :root {
+      --bg-light: #f7797d;
+      --bg-dark: #2c3e50;
+      --text-light: #333;
+      --text-dark: #ecf0f1;
+      --card-bg-light: #fff;
+      --card-bg-dark: #34495e;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom, var(--bg-light), #F64F2E);
+      margin: 0;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: var(--text-light);
+      transition: all 0.3s ease;
+    }
+
+    body.dark {
+      background: linear-gradient(to bottom, var(--bg-dark), #000);
+      color: var(--text-dark);
+    }
+
+    h1 {
+      color: white;
+      font-size: 36px;
+      margin-bottom: 30px;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    }
+
+    .toggle-btn {
+      background: #fff;
+      color: #333;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+      margin-bottom: 30px;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      max-width: 1000px;
+      width: 100%;
+    }
+
+    .card {
+      background: var(--card-bg-light);
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+      transition: 0.2s ease;
+      position: relative;
+    }
+
+    body.dark .card {
+      background: var(--card-bg-dark);
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .tag-title {
+      font-weight: bold;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .description {
+      font-size: 15px;
+    }
+
+    .btn-exemplo {
+      margin-top: 10px;
+      font-size: 14px;
+      padding: 5px 10px;
+      background-color: #eee;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .example-box {
+      background-color: #f3f3f3;
+      margin-top: 10px;
+      padding: 10px;
+      border-radius: 6px;
+      display: none;
+      font-family: monospace;
+      font-size: 13px;
+      white-space: pre-wrap;
+    }
+
+    .estrutura { border-left: 5px solid #2980b9; padding-left: 15px; }
+    .texto     { border-left: 5px solid #27ae60; padding-left: 15px; }
+    .midia     { border-left: 5px solid #e67e22; padding-left: 15px; }
+    .especial  { border-left: 5px solid #9b59b6; padding-left: 15px; }
+
+  </style>
+</head>
+<body>
+
+  <h1>🧠 Resumo Interativo de HTML</h1>
+
+  <button class="toggle-btn" onclick="document.body.classList.toggle('dark')">
+    Alternar modo claro/escuro 🌗
+  </button>
+
+  <div class="container">
+
+    <div class="card estrutura">
+      <div class="tag-title">&lt;h1&gt; a &lt;h6&gt;</div>
+      <div class="description">Usados para títulos de diferentes níveis.</div>
+      <button class="btn-exemplo" onclick="toggleExample(this)">Ver Exemplo</button>
+      <div class="example-box">&lt;h1&gt;Título Principal&lt;/h1&gt;</div>
+    </div>
+
+    <div class="card texto">
+      <div class="tag-title">&lt;p&gt;</div>
+      <div class="description">Cria parágrafos de texto.</div>
+      <button class="btn-exemplo" onclick="toggleExample(this)">Ver Exemplo</button>
+      <div class="example-box">&lt;p&gt;Este é um parágrafo.&lt;/p&gt;</div>
+    </div>
+
+    <div class="card estrutura">
+      <div class="tag-title">&lt;hr&gt;</div>
+      <div class="description">Cria uma linha horizontal de separação.</div>
+      <button class="btn-exemplo" onclick="toggleExample(this)">Ver Exemplo</button>
+      <div class="example-box">&lt;hr&gt;</div>
+    </div>
+
+    <div class="card estrutura">
+      <div class="tag-title">&lt;br&gt;</div>
+      <div class="description">Quebra de linha dentro do texto.</div>
+      <button class="btn-exemplo" onclick="toggleExample(this)">Ver Exemplo</button>
+      <div class="example-box">Primeira linha&lt;br&gt;Segunda linha</div>
+    </div>
+
+    <div class="card especial">
+      <div class="tag-title">lorem</div>
+      <div class="description">Gera texto fictício automaticamente.</div>
+      <button class="btn-exemplo" onclick="toggleExample(this)">Ver Exemplo</button>
+      <div class="example-box">lorem50 → gera 50 palavras fictícias</div>
+    </div>
+
+    <div class="card especial">
+      <div class="tag-title">&#x1F600; (emoji)</div>
+      <div class="description">Usado para emojis e caracteres especiais.</div>
+      <button class="btn-exemplo" onclick="toggleExample(this)">Ver Exemplo</button>
+      <div class="example-box">&amp;#x1F600; = 😀</div>
+    </div>
+
+    <div class="card especial">
+      <div class="tag-title">&amp;reg;</div>
+      <div class="description">Símbolo de marca registrada.</div>
+      <button class="btn-exemplo" onclick="toggleExample(this)">Ver Exemplo</button>
+      <div class="example-box">&amp;reg; = ®</div>
+    </div>
+
+    <div class="card midia">
+      <div class="tag-title">&lt;img&gt;</div>
+      <div class="description">Exibe uma imagem.</div>
+      <button class="btn-exemplo" onclick="toggleExample(this)">Ver Exemplo</button>
+      <div class="example-box">&lt;img src="imagem.jpg" alt="Descrição"&gt;</div>
+    </div>
+
+    <div class="card midia">
+      <div class="tag-title">&lt;link rel="icon"&gt;</div>
+      <div class="description">Define o favicon do site.</div>
+      <button class="btn-exemplo" onclick="toggleExample(this)">Ver Exemplo</button>
+      <div class="example-box">&lt;link rel="icon" href="favicon.ico"&gt;</div>
+    </div>
+
+    <div class="card texto">
+      <div class="tag-title">&lt;address&gt;</div>
+      <div class="description">Exibe um endereço clicável.</div>
+      <button class="btn-exemplo" onclick="toggleExample(this)">Ver Exemplo</button>
+      <div class="example-box">&lt;address&gt;Rua Exemplo, 123&lt;/address&gt;</div>
+    </div>
+
+    <div class="card texto">
+      <div class="tag-title">&lt;pre&gt;</div>
+      <div class="description">Mantém espaços e quebras no texto.</div>
+      <button class="btn-exemplo" onclick="toggleExample(this)">Ver Exemplo</button>
+      <div class="example-box">&lt;pre&gt;  Linha 1\n  Linha 2&lt;/pre&gt;</div>
+    </div>
+
+  </div>
+
+  <script>
+    function toggleExample(btn) {
+      const example = btn.nextElementSibling;
+      example.style.display = example.style.display === 'block' ? 'none' : 'block';
+    }
+  </script>
+
+</body>
+</html>
