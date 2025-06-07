@@ -81,6 +81,21 @@ section{
   font-size: 15px;
 }
 
+button{
+  border-radius: 8px;
+  font-weight: bold;
+  padding: 3px;
+  margin-top: 10px;
+  color: white;
+  background-color: var(--dark);
+}
+
+button:hover{
+  transition: 0.5s ease-out;
+  color: var(--dark);
+  background-color: var(--texto);
+}
+
 mark{
   color: var(--texto);
   background-color: #27ae5f69;
