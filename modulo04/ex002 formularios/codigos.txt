@@ -10,6 +10,8 @@ Atributos:
 method (GETe POST) = GET = Para dados não sensiveis
 POST = Para dados sensiveis
 
+GET são limitados a 3000 bites
+
 autocomplete (on e off) = on ele ira aparecer sugestão de nome no cadastro, no off não vai aparecer.
 
 required = campo obrigatorio
